@@ -11,7 +11,7 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
         AutoRejoinIfHighRam = 5000,
         WebhookURL      = "https://discord.com/api/webhooks/1478134572867911691/Z5WpUhdJkcdBSsoYE-k79YovaVsxNn93aN7TqRrGu7VFEXh_Lsm0znIaRln5DNbSquoG",
         FPSBoost        = true,
-        FPSLock         = 10,
+        FPSLock         = 120,
     },
     SkillTree = {
         Auto            = true,
@@ -24,15 +24,21 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
             TargetRarity    = "Secret",
         },
         TargetRace      = "Kitsune",
-        TargetClan      = "Monarch",
+        TargetClan      = "Eminence",
     },
     Artifact = {
         AutoEquip       = true,
         AutoUpgrade     = true,
         AutoDeleteTrash = true,
-        UpgradeSet      = {"Celestial Rupture"},
+        UpgradeSet      = {"Celestial Rupture"},-- Ashen Chronicles, Crownless Regalia, Black Horizon, Void Reaver, Celestial Rupture, Abyssal Crown
         UpgradeStopAt   = 15,
         TrashRarities   = {"Common", "Rare", "Epic"},
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1169527463a6fb002d07c345110bc0aa.lua"))()
+while true do
+    local success = pcall(function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1169527463a6fb002d07c345110bc0aa.lua"))()
+    end)
+    if success then break end
+    task.wait(5)
+end
