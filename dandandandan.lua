@@ -11,7 +11,7 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
         AutoRejoinIfHighRam = 5000,
         WebhookURL      = "https://discord.com/api/webhooks/1478134572867911691/Z5WpUhdJkcdBSsoYE-k79YovaVsxNn93aN7TqRrGu7VFEXh_Lsm0znIaRln5DNbSquoG",
         FPSBoost        = true,
-        FPSLock         = 120,
+        FPSLock         = 10,
     },
     SkillTree = {
         Auto            = true,
@@ -23,9 +23,9 @@ getgenv().SailorPieceConfig = getgenv().SailorPieceConfig or {
             Auto            = true,
             TargetRarity    = "Secret",
         },
-        TargetRace      = "Kitsune",
-        TargetClan      = "Eminence",
-    },
+        TargetRace      = {"Kitsune"},
+        TargetClan      = {"Eminence", "Monarch"},
+        },
     Artifact = {
         AutoEquip       = true,
         AutoUpgrade     = true,
