@@ -131,7 +131,7 @@ getgenv().Config = {
         },
         Webhook = {
             Enabled = true, -- Send webhook notifications to Discord
-            URL = "https://discord.com/api/webhooks/1490424569918521424/v9I2VVHbxYuqc9J7gM3XXDXQg_PQ7PgxKgM3AyiIsAcR68rlRO_gmWyLfxw5ylLwkrDi", -- Discord webhook URL for notifications
+            URL = "", -- Discord webhook URL for notifications
             PetUnlock = {
                 Enabled = true, -- Send webhook when hatching/unlocking a pet
                 URL = "https://discord.com/api/webhooks/1490592665534726275/WHIEvhSYBpM8dk79sgY_rTA9huxbUNTZYKCsgy3gwjdzomTeuYrrw85Df_udSmjClLK6", -- Webhook URL for pet unlocks
