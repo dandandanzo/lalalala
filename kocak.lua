@@ -31,7 +31,7 @@ _G.FishItConfig = _G.FishItConfig or {
         },
         ["Item Name"] = {
             "Eggy Enchant Stone",
-			      "Evolved Enchant Stone",
+			"Evolved Enchant Stone",
         },
     },
     ["Farm Coin Only"] = {
