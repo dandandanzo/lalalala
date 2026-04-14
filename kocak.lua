@@ -8,8 +8,8 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
-			      {Variant = "Leviathan's Rage"},
-		      	{Variant = "Leviathan Rage"},
+			{Variant = "Leviathan's Rage"},
+		    {Variant = "Leviathan Rage"},
         },
 
         ["Auto Accept Trade"] = true,
@@ -27,7 +27,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
             {Variant = "Leviathan's Rage"},
-			      {Variant = "Leviathan Rage"},
+			{Variant = "Leviathan Rage"},
         },
         ["Item Name"] = {
             "Eggy Enchant Stone",
@@ -55,19 +55,22 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Fluorescent Rod",
     },
     ["WebHook"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1416499221443383386/ArhSYnU-tSzj06QuM2ZkYT6UrBT1NLR_fbgpX8Mc6Gg3_o7TS4UvxfFXrYzWxuBjwyaE",
         ["Auto Sending"] = true,
-        ["Category"] = {"Secret"},
-
-        ["Link Webhook Quest Complete"] = "",
+        ["Category"] = {
+            "Secret",
+            {Name = "Ruby", Variant = "Gemstone"},
+        },
+        ["Item Name"] = {"Eggy Enchant Stone", "Evolved Enchant Stone"},
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1416499221443383386/ArhSYnU-tSzj06QuM2ZkYT6UrBT1NLR_fbgpX8Mc6Gg3_o7TS4UvxfFXrYzWxuBjwyaE",
+        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1416802168714956811/AwLKzdShOJ2k2r8PFHmYr8LDnQJSjd2QZeyqENq6stqNZaPXebnUwsn5EPAzpxHLc17P",
     },
     ["Weather"] = {
         ["Auto Buying"] = true,
         ["Minimum Rod"] = "Fluorescent Rod",
         ["Weather List"] = {
             "Wind",
-			      "Cloudy",
-		      	"Storm",
+			"Cloudy",
+		    "Storm",
         },
     },
     ["Potions"] = {
